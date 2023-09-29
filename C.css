@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&family=Lilita+One&display=swap');
+
+body{
+    background: blanchedalmond;
+    overflow: hidden;
+}
+#home{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#home.active{
+    display: none;
+}
+#head.active{
+    display: none;
+}
+#nav.active{
+    transform: translateX(0);
+}
+#nav{
+    background: linear-gradient(to right bottom,#5e3a0c,#fce48e);
+    transform: translate(-100%);
+    transition: 0.4s ease;
+}
+#nav.active{
+    transform: translate(0);
+}
+#links{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+#links a{
+    margin: 20px;
+    text-shadow: 0 0 5px black;
+}
+#who{
+    z-index: 999;
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    top:0;
+    position: absolute;
+}
+#who.active{
+    transform: translateX(0);
+}
+/* #WhoMain{
+    display: none;
+} */
+#WhoMain.active{
+    display: block;
+}

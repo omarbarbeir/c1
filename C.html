@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./c.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body class="overflow-hidden">
+
+    
+    <div id="main">
+        <header id="head" class="flex justify-between items-center fixed w-full p-6">
+            <h1 class="text-4xl lg:text-5xl font-bold">صباحو تحدي</h1>
+
+
+            <div id="menu" class="w-14 h-14 border-2 border-gray-800 rounded-lg flex justify-evenly items-center flex-col cursor-pointer">
+                <span class="w-1/2 h-1 bg-orange-300"></span>
+                <span class="w-1/2 h-1 bg-orange-300"></span>
+                <span class="w-1/2 h-1 bg-orange-300"></span>
+            </div>
+        </header>
+
+
+
+        <div id="home" class="w-full text-center font-bold">
+            <h1 class="text-4xl lg:text-5xl">تحدي في معلومات كرة القدم</h1>
+        </div>
+
+        <div id="nav" class="w-full h-screen">
+            <div id="exitMenu" class="absolute right-0 bg-white w-7 p-1 lg:w-9 lg:p-2 text-center text-xl rounded-bl font-bold">X</div>
+            <div id="links">
+                <a href="#" id="t" class="text-5xl font-bold  text-yellow-50">تمثيل</a>
+                <a href="#" id="f" class="text-5xl font-bold  text-yellow-50">5 * 10</a>
+                <a href="#" id="p" class="text-5xl font-bold  text-yellow-50">كلمة السر</a>
+            </div>
+        </div>
+
+
+        <div id="container">
+            <div id="who" class="w-full h-screen bg-green-500">
+                <div id="WhoBtns" class="flex justify-around items-center mt-3">
+                    <button id="showE" class="border-2 border-red-500 w-2/5 lg:w-5/12 p-1 text-3xl rounded-lg font-bold">لاعب اوروبي</button>
+                    <button id="showM" class="border-2 border-red-500 w-2/5 lg:w-5/12 p-1 text-3xl rounded-lg font-bold">لاعب محلي</button>
+                </div>
+                <div id="MainImg" class="h-72 m-auto">
+                    <img src="./download.jpg" id="WhoMain" class="w-96 h-full">
+                </div>
+                <div id="name">
+                    <h1 id="names" class="bg-yellow-50 text-center font-bold text-2xl w-72 p-1 m-auto h-14 rounded-lg mt-4"></h1>
+                </div>
+
+                <div id="WhoST" class="m-auto w-full flex justify-around items-center">
+                    <button id="WhoTimer" class="w-20 h-20 text-2xl lg:w-24 lg:h-24 lg:text-3xl font-bold border-2 border-red-500 rounded-full p-1">ابدا</button>
+                    <button id="WhoStop" class="w-20 h-20 text-2xl lg:w-24 lg:h-24 lg:text-3xl font-bold border-2 border-red-500 rounded-full p-1">توقف</button>
+                </div>
+                <audio controls src="./old-alarm-sound_gdMsEsXK.mp3" class="hidden" preload="metadata" id="WhoAudio"></audio>
+
+                <button id="exitWho" class="absolute right-0 top-24 border-2 border-red-50 p-1 rounded-lg tetx-xl w-16 lg:w-20 font-bold">Exit</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    
+
+
+
+
+<script src="./PhotosE.js"></script>  
+<script src="./photos.js"></script>  
+<script src="./questions.js"></script>  
+<script src="./c.js"></script>  
+<script src="https://kit.fontawesome.com/41a38439e1.js" crossorigin="anonymous"></script>
+</body>
+</html>
